@@ -11,7 +11,7 @@ export class EditarComponent implements OnInit {
 
   single = [];
   multi = [];
-  view: [number, number] = [900, 250];
+  // view: [number, number] = [];
 
   
   legend: boolean = true;

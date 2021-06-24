@@ -1,4 +1,6 @@
-.mat-body, .mat-body-1, .mat-typography {
-    font: 450 25px Roboto, "Helvetica Neue", sans-serif important;
+.gh{
+    width:95%;
+    height:100%;
+    margin-left:3%;
+    margin-top: 3%
 }
-

@@ -17,9 +17,10 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
 
 
-
-
 import {DragDropModule} from '@angular/cdk/drag-drop';
+
+import { KtdGridModule } from '@katoid/angular-grid-layout';
+
 
 
 
@@ -42,7 +43,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     DragDropModule,
     MatButtonModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    KtdGridModule
   ]
 })
 export class ProductosModule { }

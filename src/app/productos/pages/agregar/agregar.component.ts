@@ -3,12 +3,26 @@ import { single, multi, } from '../agregar/data'
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import { EditarComponent } from '../editar/editar.component';
 
+import { KtdGridLayout, ktdTrackById } from '@katoid/angular-grid-layout';
+
 @Component({
   selector: 'app-agregar',
   templateUrl: './agregar.component.html',
   styleUrls: ['./agregar.component.css']
 })
+
+
 export class AgregarComponent implements OnInit {
+
+  cols: number = 6;
+  rowHeight: number = 100;
+  layout: KtdGridLayout = [
+      {id: '0', x: 0, y: 0, w: 3, h: 3},
+      {id: '1', x: 3, y: 0, w: 3, h: 3},
+      {id: '2', x: 0, y: 3, w: 3, h: 3},
+      {id: '3', x: 3, y: 3, w: 3, h: 3},
+  ];
+  trackById = ktdTrackById
 
   single = [];
   multi = [];
